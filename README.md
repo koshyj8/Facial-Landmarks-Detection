@@ -1,6 +1,5 @@
-# PyTorch Facial Landmark Detection with Xception
-
-This project implements a deep learning model based on XceptionNet to detect key facial landmarks from images. Using PyTorch, the model identifies and visualizes facial features like eyes, nose, and mouth. The model can be trained from scratch or used with a pre-trained model for inference.
+# Facial Landmark Detection with Xception Architecture
+Developed a facial landmark detection system leveraging XceptionNet and PyTorch. Implemented data preprocessing, GPU acceleration, and Matplotlib for visualization. The model accurately detects and overlays facial landmarks, suitable for applications in facial recognition and feature extraction.
 
 ## Table of Contents
 - [Features](#features)
@@ -33,6 +32,7 @@ This project implements a deep learning model based on XceptionNet to detect key
 - matplotlib
 - albumentations
 - opencv
+- scikit-imahe
 
 ## Installation
 
@@ -44,7 +44,10 @@ This project implements a deep learning model based on XceptionNet to detect key
 
 2. Install the required packages:
    ```
-   pip install torch torchvision tqdm numpy albumentations matplotlib cv2 mpl_toolkits xml
+   pip install -r requirements.txt
+   ```
+   ```
+   pip install torch torchvision numpy matplotlib tqdm scikit-image albumentations opencv-python
    ```
 
 ## Usage
@@ -64,16 +67,14 @@ This project implements a deep learning model based on XceptionNet to detect key
    After prediction, the landmarks will be drawn on the input image and displayed using Matplotlib. The output image will also be saved for further inspection.
    
 ## Project Structure
-
+```
 FLD/
-│
 ├── dataset/
-│
 ├── fld_xception.ipynb          # Main model training and evaluation file
 ├── model.pt                    # Pre-trained model weights
 ├── README.md                   # Project documentation
 └── requirements.txt            # List of dependencies
-
+```
 
 ## Model Architecture
 
