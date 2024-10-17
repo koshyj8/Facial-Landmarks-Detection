@@ -85,11 +85,10 @@ Both models output 136 values (68 landmarks * 2 coordinates) for each input imag
 ## Training Process
 
 1. Data loading using PyTorch DataLoader
-2. Model initialization (ResNet50 or Xception) using PyTorch modules
-3. Training loop with PyTorch optimizers and batch-level progress tracking
-4. Validation after each epoch using `torch.no_grad()`
-6. Early stopping if no improvement in validation loss
-7. Model checkpointing using `torch.save` to save the best model
+2. Training loop with PyTorch optimizers and batch-level progress tracking
+3. Validation after each epoch using `torch.no_grad()`
+4. Early stopping if no improvement in validation loss
+5. Model checkpointing using `torch.save` to save the best model
 
 ## Evaluation Metrics
 
