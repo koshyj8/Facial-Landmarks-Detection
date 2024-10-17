@@ -45,7 +45,6 @@ Developed a facial landmark detection system leveraging XceptionNet and PyTorch.
 2. Install the required packages:
    ```
    pip install -r requirements.txt
-
    ```
    ```
    pip install torch torchvision numpy matplotlib tqdm scikit-image albumentations opencv-python
@@ -68,16 +67,12 @@ Developed a facial landmark detection system leveraging XceptionNet and PyTorch.
    After prediction, the landmarks will be drawn on the input image and displayed using Matplotlib. The output image will also be saved for further inspection.
    
 ## Project Structure
-
 FLD/
-│
 ├── dataset/
-│
 ├── fld_xception.ipynb          # Main model training and evaluation file
 ├── model.pt                    # Pre-trained model weights
 ├── README.md                   # Project documentation
 └── requirements.txt            # List of dependencies
-
 
 ## Model Architecture
 
